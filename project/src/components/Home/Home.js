@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className={classes.Home}>
             <p className={classes.Title}>LabelsHouse</p>
-            <div className={classes.Describe}>This Website is used to store the labels of link whatever legal or not.</div>
+            <div className={classes.Describe}>This Website is used to store the labels of link whatever legal or not, and opened to anyone.</div>
             <button className={classes.Start}>Start</button>
             <div className={classes.Auth}>
                 <button>Login</button>
