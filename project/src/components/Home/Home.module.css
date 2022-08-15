@@ -7,6 +7,10 @@
   left: 60%;
   top: 5%;
 }
+.Home .Title p {
+  display: inline;
+  font-style: italic;
+}
 .Home .Background {
   width: 100%;
   height: calc(100vh);
