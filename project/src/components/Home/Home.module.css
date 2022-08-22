@@ -16,9 +16,9 @@
   height: calc(100vh);
   background-size: 100% 100%;
   background-position: center center;
-  overflow: hidden;
-  background-image: url(../../../public/img/NoiseLights.png);
   background-repeat: no-repeat;
+  background-image: url(../../../public/img/NoiseLights.png);
+  overflow: hidden;
 }
 .Home .Describe {
   position: absolute;

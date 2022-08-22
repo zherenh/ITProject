@@ -1,19 +1,21 @@
 import React from 'react'
 import classes from './Home.module.css'
 import { Link } from 'react-router-dom'
+import TopBar from '../TopBar/TopBar'
 
 const Home = () => {
     return (
         <div className={classes.Home}>
+            <TopBar></TopBar>
             <p className={classes.Title}>Labels<p>House</p></p>
             <div className={classes.Describe}>This Website is used to store the labels of link whatever legal or not, and opened to anyone.</div>
             <button className={classes.Start}>
-                <Link to='starter'>Start</Link>
+                <Link to='search'>Start</Link>
             </button>
-            <div className={classes.Auth}>
+            {/* <div className={classes.Auth}>
                 <button>Login</button>
                 <button>Register</button>
-            </div>
+            </div> */}
             <div className={classes.Background}></div>
         </div>
     )

@@ -1,0 +1,13 @@
+.TopBar {
+  background-color: #0f0f0f;
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-around;
+}
+.TopBar div {
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+}
+/*# sourceMappingURL=./TopBar.module.css.map */
