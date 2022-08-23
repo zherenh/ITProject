@@ -4,11 +4,24 @@
   background-color: #0f0f0f;
 }
 .Search .Img {
-  width: 30%;
-  height: 30%;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
   background-image: url(../../../public/img/NoiseLights6.png);
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.Search .SearchingPart {
+  display: flex;
+}
+.Search .SearchingPart .Bar {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 40px;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
 }
 /*# sourceMappingURL=./Search.module.css.map */

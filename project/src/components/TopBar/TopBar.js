@@ -7,10 +7,14 @@ const TopBar = () => {
         <div className={classes.TopBar}>
             <div>Login</div>
             <div>Register</div>
-
+            <div className={classes.Space}></div>
+            <div>
+                <Link to='/'>Home</Link>
+            </div>
             <div>Search</div>
             <div>Self</div>
             <div>Post</div>
+            <div>About us</div>
         </div>
     )
 }

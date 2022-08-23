@@ -1,4 +1,6 @@
 .TopBar {
+  position: absolute;
+  top: 3%;
   background-color: #0f0f0f;
   width: 100%;
   float: left;
@@ -6,8 +8,18 @@
   justify-content: space-around;
 }
 .TopBar div {
-  font-size: 30px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: bolder;
   color: white;
+  text-align: center;
+  flex: 1;
+}
+.TopBar div a {
+  color: white;
+  text-decoration: none;
+}
+.TopBar .Space {
+  flex: 7;
 }
 /*# sourceMappingURL=./TopBar.module.css.map */
