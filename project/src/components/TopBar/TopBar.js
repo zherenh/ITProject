@@ -11,9 +11,15 @@ const TopBar = () => {
             <div>
                 <Link to='/'>Home</Link>
             </div>
-            <div>Search</div>
-            <div>Self</div>
-            <div>Post</div>
+            <div>
+                <Link to='search'>Search</Link>
+            </div>
+            <div>
+                <Link to='profile'>Profile</Link>
+            </div>
+            <div>
+                <Link to='update'>Update</Link>
+            </div>
             <div>About us</div>
         </div>
     )
