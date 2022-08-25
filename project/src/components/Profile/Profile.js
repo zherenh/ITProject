@@ -1,6 +1,6 @@
 import React from 'react'
 import TopBar from '../TopBar/TopBar'
-import classes from './Update.module.css'
+import classes from './Profile.module.css'
 
 const Profile = () => {
     return (
