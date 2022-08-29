@@ -2,20 +2,24 @@
     width: 100%;
     height: calc(100vh);
     background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .Img {
         margin: 0 auto;
-        width: 50%;
-        height: 50%;
+        width: 30%;
+        height: 30%;
         background-image: url(../../../public/img/NoiseLights6.png);
-        background-size: 100% 100%;
+        background-size: 180% 180%;
         background-position: center center;
         background-repeat: no-repeat;
+        z-index: 2;
     }
 
     .SearchingPart {
         display: flex;
-
+        margin-top: -20px;
         .Bar {
             margin: 0 auto;
             width: 60%;
@@ -26,6 +30,32 @@
             border: 3px solid white;
 
             color: white;
+        }
+    }
+
+    .Lables{
+        width: 60%;
+        height: 35%;
+        margin: 40px auto;
+        border: 3px solid white;
+        border-radius: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items:flex-start;
+        align-content :flex-start;
+
+        div{
+            text-align: center;
+            margin: 7px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            background-color: white;
+            opacity: 0.9;
+            color: black;
+            font-size: 23px;
+            line-height: 23px;
+            font-weight: bolder;
         }
     }
 }

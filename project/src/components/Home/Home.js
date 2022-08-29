@@ -12,10 +12,6 @@ const Home = () => {
             <button className={classes.Start}>
                 <Link to='search'>Start</Link>
             </button>
-            {/* <div className={classes.Auth}>
-                <button>Login</button>
-                <button>Register</button>
-            </div> */}
             <div className={classes.Background}></div>
         </div>
     )

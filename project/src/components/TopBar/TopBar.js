@@ -15,10 +15,10 @@ const TopBar = () => {
                 <Link to='/search'>Search</Link>
             </div>
             <div>
-                <Link to='/profile'>Profile</Link>
+                <Link to='/add'>Add</Link>
             </div>
             <div>
-                <Link to='/update'>Update</Link>
+                <Link to='/modify'>Modify</Link>
             </div>
             <div>About us</div>
         </div>
