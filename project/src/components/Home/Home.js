@@ -7,6 +7,8 @@ const Home = () => {
     return (
         <div className={classes.Home}>
             <TopBar></TopBar>
+            <div className={classes.Stone1}></div>
+            <div className={classes.Stone2}></div>
             <p className={classes.Title}>Labels<p>House</p></p>
             <div className={classes.Describe}>This Website is used to store the labels of link whatever legal or not, and opened to anyone.</div>
             <button className={classes.Start}>
