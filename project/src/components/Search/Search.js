@@ -8,6 +8,8 @@ export const Search = () => {
 		<div className={classes.Search}>
 			<TopBar></TopBar>
 			<div className={classes.Img}></div>
+			<div className={classes.Stone1}></div>
+			<div className={classes.Stone2}></div>
 			<div className={classes.SearchingPart}>
 				<input className={classes.Bar} type="text" placeholder=' Search the labels' />
 			</div>
