@@ -12,6 +12,9 @@ const TopBar = () => {
                 <Link to='/'>Home</Link>
             </div>
             <div>
+                <Link to='/Profile'>Profile</Link>
+            </div>
+            <div>
                 <Link to='/search'>Search</Link>
             </div>
             <div>

@@ -5,6 +5,8 @@ import AddPage from "./pages/AddPage";
 import SearchPage from "./pages/SearchPage";
 import StarterPage from "./pages/StarterPage";
 import ModifyPage from "./pages/ModifyPage";
+import ProfilePage from "./pages/ProfilePage";
+
 
 function App() {
 	return (
@@ -16,6 +18,7 @@ function App() {
 					<Route path={"/search"} element={<SearchPage></SearchPage>}></Route>
 					<Route path={"/add"} element={<AddPage></AddPage>}></Route>
 					<Route path={"/modify"} element={<ModifyPage></ModifyPage>}></Route>
+					<Route path={"/Profile"} element={<ProfilePage></ProfilePage>}></Route>
 				</Routes>
 			</Layout>
 		</div>
