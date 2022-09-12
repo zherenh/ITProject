@@ -58,13 +58,10 @@
 }
 
 .Modify .linkContainer .linkBox .link {
-  padding-left: 2%;
-  width: 80%;
+  width: 100%;
   height: 50px;
   line-height: 50px;
   display: flex;
-  text-align: center;
-  justify-content: left;
   border-radius: 10px;
   outline: none;
   border: 2px solid #e9e9e9;
@@ -73,10 +70,24 @@
   font-weight: 600;
   font-size: 20px;
 }
-.Modify .linkContainer .linkBox .link .label {
-  margin-left: 2%;
-  width: 10%;
+
+.Modify .linkContainer .linkBox .link .text { 
+  padding-left: 10%;
+  width: 60%;
+  text-align: left;
+  justify-content: text;
+}
+
+.Modify .linkContainer .linkBox .link .labelContainer { 
   display: flex;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+}
+
+.Modify .linkContainer .linkBox .link .labelContainer .label {
+  margin-left: 5%;
+  flex: 1;
   text-align: center;
   justify-content: center;
   border-radius: 20px;
@@ -91,24 +102,17 @@
   background-color: #FFFFFF;
 }
 
-.Modify .linkContainer .linkBox .editButton {
+.Modify .linkContainer .linkBox .buttonBar { 
   display: flex;
+  width: 15%;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  color: #000;
-  font-weight: 600;
-  font-size: 20px;
-  background-color: #809dff;
-  width: 8%;
+  margin-left: 2%;
 }
 
 .Modify .linkContainer .linkBox .deleteButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1;
   height: 40px;
   border-radius: 20px;
   border: none;
@@ -117,6 +121,19 @@
   font-size: 26px;
   background-color: #FF97C3;
   width: 4%;
+}
+
+.Modify .linkContainer .linkBox .editButton {
+  flex: 1;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #809dff;
+  width: 8%;
+  margin-left: 5%;
 }
 
 /*# sourceMappingURL=./Modify.module.css.map */
