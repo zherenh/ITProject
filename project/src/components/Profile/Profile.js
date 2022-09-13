@@ -10,10 +10,11 @@ const Profile = () => {
         linkList.push('link')
     }
     return (
-        <div className={classes.Home}>
+        <div className={classes.Profile}>
             <TopBar></TopBar>
-            <div className={classes.Describe}></div>
-            {/* <div className={classes.Background}></div> */}
+            <div className={classes.BottomStone}></div>
+            <div className={classes.RightStone}></div>
+            <div className={classes.LeftStone}></div>
             <div className={classes.mybox}>
                 <div className={classes.title}>
                     Profile
