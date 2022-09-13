@@ -3,10 +3,10 @@ import TopBar from '../TopBar/TopBar'
 import classes from './Profile.module.css'
 
 const Profile = () => {
-    let lebalList = [];
+    let labelList = [];
     let  linkList = [];
     for(let i=0;i<10;i++){
-        lebalList.push('lebal')
+        labelList.push('label')
         linkList.push('link')
     }
     return (
@@ -25,9 +25,9 @@ const Profile = () => {
                 <div className={classes.lebal_box}>
                     <div className={classes.left_box}>
                         <div className={classes.title}>
-                            Lebals
+                            Labels
                         </div>
-                        {lebalList.map((item,index) => <div key={index} className={classes.item_one}>{item}</div>)}
+                        {labelList.map((item,index) => <div key={index} className={classes.item_one}>{item}</div>)}
                         <div className={classes.clearFloat}></div>
                     </div>
                     <div className={classes.right_box}>
