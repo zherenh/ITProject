@@ -8,7 +8,7 @@ How to run
 
 1. For Mac & Linux: 
     
-
+    open Terminal
 
     cd project
     
@@ -16,7 +16,7 @@ How to run
 
 2. For Windows: 
 
-
+    open Terminal
     
     cd project 
     
