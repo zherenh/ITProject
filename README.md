@@ -15,10 +15,13 @@ This Web App also includes a label library where the user can search the label h
 
 ## Catalog
 * [Developers](#Developers)
-* [Current Progess](#Current Progess)
-* [How to run](#How to run)
+* [Supervisor](#Supervisor)
+* [Client](#Client)
+* [Progess](#Progess)
+* [Running](#Running)
     * For Mac & Linux
     * For Windows
+* [Tools](#Tools)
 
 ## Developers
 Zheren Huang 
@@ -27,10 +30,16 @@ Zhiwei Liu
 Chaowen Zeng
 Qianying Wang
 
-## Current Progess 
+## Supervisor
+Alex Xiang 
+
+## Client
+Xiang guo
+
+## Progess 
 A Web App for storing the links on your laptop. But the backend and server are still in developing. The project only can run on the local browser. 
 
-## How to run
+## Running
 ### For Mac & Linux: 
     
     open Terminal
@@ -49,4 +58,12 @@ A Web App for storing the links on your laptop. But the backend and server are s
 
 Then you will run a react app on your computer browser.
 
+## Tools
+Repository - Github 
+Front End - React.js 
+BackEnd - TypeScript
+Database - MongoDB
+Deployment - Heroku 
+Project Management - Trello 
+Communication - Wechat 
 
