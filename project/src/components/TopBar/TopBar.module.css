@@ -6,6 +6,7 @@
   float: left;
   display: flex;
   justify-content: space-around;
+  z-index: 999;
 }
 .TopBar div {
   font-size: 20px;

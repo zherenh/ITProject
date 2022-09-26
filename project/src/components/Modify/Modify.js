@@ -41,7 +41,122 @@ const Modify = () => {
                         </div>
                     </div>
                 </div>
-                
+                <div className={classes.linkBox}>
+                    <div className={classes.link}>
+                        
+                        <div className={classes.text}> 
+                        www.link1.com.au
+                        </div>
+
+                        <div className={classes.labelContainer}> 
+                            <div className={classes.label}>
+                                label1
+                            </div>
+                            <div className={classes.label}>
+                                label2
+                            </div>
+                            <div className={classes.label}>
+                                label3
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={classes.buttonBar}> 
+                        <div className={classes.deleteButton}> 
+                            -
+                        </div>
+                        <div className={classes.editButton}> 
+                            Edit
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.linkBox}>
+                    <div className={classes.link}>
+                        
+                        <div className={classes.text}> 
+                        www.link1.com.au
+                        </div>
+
+                        <div className={classes.labelContainer}> 
+                            <div className={classes.label}>
+                                label1
+                            </div>
+                            <div className={classes.label}>
+                                label2
+                            </div>
+                            <div className={classes.label}>
+                                label3
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={classes.buttonBar}> 
+                        <div className={classes.deleteButton}> 
+                            -
+                        </div>
+                        <div className={classes.editButton}> 
+                            Edit
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.linkBox}>
+                    <div className={classes.link}>
+                        
+                        <div className={classes.text}> 
+                        www.link1.com.au
+                        </div>
+
+                        <div className={classes.labelContainer}> 
+                            <div className={classes.label}>
+                                label1
+                            </div>
+                            <div className={classes.label}>
+                                label2
+                            </div>
+                            <div className={classes.label}>
+                                label3
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={classes.buttonBar}> 
+                        <div className={classes.deleteButton}> 
+                            -
+                        </div>
+                        <div className={classes.editButton}> 
+                            Edit
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.linkBox}>
+                    <div className={classes.link}>
+                        
+                        <div className={classes.text}> 
+                        www.link1.com.au
+                        </div>
+
+                        <div className={classes.labelContainer}> 
+                            <div className={classes.label}>
+                                label1
+                            </div>
+                            <div className={classes.label}>
+                                label2
+                            </div>
+                            <div className={classes.label}>
+                                label3
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={classes.buttonBar}> 
+                        <div className={classes.deleteButton}> 
+                            -
+                        </div>
+                        <div className={classes.editButton}> 
+                            Edit
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
