@@ -1,0 +1,14 @@
+
+spring:
+  datasource:
+    username: root
+    password: zh123456
+    url: jdbc:mysql://124.221.193.16:3306/project?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+#    url: jdbc:mysql://localhost:3306/project?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.project.project_backend.pojo
+server:
+  port: 8080

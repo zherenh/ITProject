@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.project.project_backend.mapper.FileMapper">
+    <!--select查询语句-->
+<select id="getAllFile" resultType="file">
+    select*from file
+</select>
+    <resultMap id="getLinkAndLabelsMap" type="file">
+        <id property="id" column="id"/>
+        <result property="link" column="link"/>
+        <result property="createDate" column="create_date"/>
+        <result property="desc" column="desc"/>
+        <collection property="labels" ofType="label">
+            <id property="lid" column="lid"/>
+            <result property="labelName" column="label_name"/>
+            <result property="linkId" column="link_id"/>
+        </collection>
+    </resultMap>
+
+
+    <select id="getLinkByLike" resultType="String">
+        select link from file where link like #{linkeName}
+    </select>
+
+
+    <select id="getLinkByLabelName" resultType="String">
+        select link from file where id=(select link_id from label where label_name like #{labelName});
+
+    </select>
+
+
+</mapper>
