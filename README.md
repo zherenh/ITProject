@@ -14,30 +14,30 @@ LabelsHouse
 * This Web App also includes a label library where the user can search the label he wants.
 
 ## Catalog
+* [Progess](#Progess)
 * [Developers](#Developers)
 * [Supervisor](#Supervisor)
 * [Client](#Client)
-* [Progess](#Progess)
 * [Running](#Running)
     * For Mac & Linux
     * For Windows
 * [Tools](#Tools)
 
+## Progess 
+Backend and server are still in developing. The project only can run on the local browser. 
+
 ## Developers
-* Zheren Huang 
-* Yijun Zhou 
-* Zhiwei Liu
-* Chaowen Zeng
-* Qianying Wang
+* Zheren Huang - zherenh@student.unimelb.edu.au 
+* Yijun Zhou - yijuzhou@student.unimelb.edu.au 
+* Zhiwei Liu - zhiliu4@student.unimelb.edu.au
+* Chaowen Zeng - chaowenz@student.unimelb.edu.au 
+* Qianying Wang - qianying1@student.unimelb.edu.au 
 
 ## Supervisor
-Alex Xiang 
+Alex Xiang - alexx@unimelb.edu.au 
 
 ## Client
-Xiang guo
-
-## Progess 
-A Web App for storing the links on your laptop. But the backend and server are still in developing. The project only can run on the local browser. 
+Xiang guo - xiaguo2@student.unimelb.edu.au
 
 ## Running
 ### For Mac & Linux: 
@@ -61,8 +61,8 @@ Then you will run a react app on your computer browser.
 ## Tools
 * Repository - Github 
 * Front End - React.js 
-* BackEnd - TypeScript
-* Database - MongoDB
+* BackEnd - Java
+* Database - SQL
 * Deployment - Heroku 
 * Project Management - Trello 
 * Communication - Wechat 
