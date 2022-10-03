@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
+
 @Service
 public class FileServiceImpl implements FileService {
     @Autowired
@@ -25,5 +27,30 @@ public class FileServiceImpl implements FileService {
     @Override
     public List<String> getLinkByLabelName(String labelName) {
         return fileMapper.getLinkByLabelName(labelName);
+    }
+
+    @Override
+    public int deleteFileById(Integer id) {
+        return fileMapper.deleteFileById(id);
+    }
+
+    @Override
+    public File getFileById(Integer id) {
+        return fileMapper.getFileById(id);
+    }
+
+    @Override
+    public int addFile(File file) {
+        return fileMapper.addFile(file);
+    }
+
+    @Override
+    public int getFileIdByLinkName(String linkName) {
+        return fileMapper.getFileIdByLinkName(linkName);
+    }
+
+    @Override
+    public int updateFile(Map<String, Object> map) {
+        return fileMapper.updateFile(map);
     }
 }

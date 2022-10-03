@@ -12,4 +12,8 @@ public class Label {
     private String labelName;
     private int linkId;
 
+    public Label(String labelName, int linkId) {
+        this.labelName = labelName;
+        this.linkId = linkId;
+    }
 }

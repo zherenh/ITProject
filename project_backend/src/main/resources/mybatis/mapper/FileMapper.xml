@@ -5,11 +5,13 @@
 <!--namespace=绑定一个对应的Dao/Mapper接口-->
 <mapper namespace="com.project.project_backend.mapper.FileMapper">
     <!--select查询语句-->
-<select id="getAllFile" resultType="file">
-    select*from file
+<select id="getAllFile" resultMap="getLinkAndLabelsMap">
+    select  * FROM file  join label on file.id=label.link_id
+
 </select>
     <resultMap id="getLinkAndLabelsMap" type="file">
         <id property="id" column="id"/>
+        <result property="linkName" column="link_name"/>
         <result property="link" column="link"/>
         <result property="createDate" column="create_date"/>
         <result property="desc" column="desc"/>
@@ -27,9 +29,43 @@
 
 
     <select id="getLinkByLabelName" resultType="String">
-        select link from file where id=(select link_id from label where label_name like #{labelName});
+        select link from file where id in (select link_id from label where label_name like #{labelName});
 
     </select>
 
+<delete id="deleteFileById">
+    delete file,label from file left join label on file.id=label.link_id where file.id=#{id};
+</delete>
+
+    <insert id="addFile" parameterType="file">
+        INSERT INTO file (`link_name`, `link`, `create_date`, `desc`) VALUES (#{linkName},#{link},#{createDate},#{desc});
+    </insert>
+    <select id="getFileById" resultMap="getLinkAndLabelsMap">
+        select * FROM file  join label on file.id=label.link_id where file.id=#{id}
+    </select>
+
+    <update id="updateFile" parameterType="map">
+        update file
+        <set>
+            <if test="linkName != null">
+                `link_name` = #{linkName}
+            </if>
+            <if test="link != null">
+                ,`link` = #{link}
+            </if>
+            <if test="createDate != null">
+                ,`create_date`= #{createDate}
+            </if>
+            <if test="desc != null">
+                ,`desc` = #{desc}
+            </if>
+        </set>
+        where `id`=#{id}
+    </update>
+
+    <select id="getFileIdByLinkName" resultType="int">
+        select id from file where link_name=#{linkName};
+
+    </select>
 
 </mapper>

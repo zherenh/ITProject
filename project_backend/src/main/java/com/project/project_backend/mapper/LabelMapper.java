@@ -1,10 +1,12 @@
 package com.project.project_backend.mapper;
 
+import com.project.project_backend.pojo.File;
 import com.project.project_backend.pojo.Label;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface LabelMapper {
@@ -17,4 +19,13 @@ public interface LabelMapper {
 
     //根据link搜索label名字
     List<String> getLabelByLink(@Param("link")String link);
+
+    //添加label
+    int addLabel(Label label);
+
+    //根据id删除label
+    int deleteLabelById(int linkId);
+
+    //根据linkId查找lid
+    List<Integer> getLidByLinkId(Integer linkId);
 }

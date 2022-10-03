@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class LabelService  implements com.project.project_backend.service.LabelService {
+public class LabelServiceImpl implements com.project.project_backend.service.LabelService {
     @Autowired
     LabelMapper labelMapper;
 
@@ -24,5 +24,20 @@ public class LabelService  implements com.project.project_backend.service.LabelS
     @Override
     public List<String> getLabelByLink(String link) {
         return labelMapper.getLabelByLink(link);
+    }
+
+    @Override
+    public int addLabel(Label label) {
+        return labelMapper.addLabel(label);
+    }
+
+    @Override
+    public int deleteLabelById(int linkId) {
+        return labelMapper.deleteLabelById(linkId);
+    }
+
+    @Override
+    public List<Integer> getLidByLinkId(Integer linkId) {
+        return labelMapper.getLidByLinkId(linkId);
     }
 }

@@ -3,18 +3,26 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.project_backend.mapper.LabelMapper">
-
     <select id="getAllLabel" resultType="String">
-        select label_name from label
+        select distinct label_name from label
     </select>
-
     <select id="getLabelByLike" resultType="String">
-        select label_name from label where label_name like #{labelName}
+        select distinct label_name from label where label_name like #{labelName}
     </select>
 
     <select id="getLabelByLink" resultType="String">
-        select label_name from label where link_id=(select id from file where link like #{link});
+        select distinct label_name from label where link_id=(select id from file where link like #{link});
     </select>
+<insert id="addLabel" parameterType="label">
+    insert into label  (label_name,link_id) values (#{labelName},#{linkId})
 
+</insert>
+    <delete id="deleteLabelById">
+        delete from label where link_id=#{linkId}
+    </delete>
 
+    <select id="getLidByLinkId" resultType="Integer">
+        select lid
+        from label where link_id=#{linkId};
+    </select>
 </mapper>
