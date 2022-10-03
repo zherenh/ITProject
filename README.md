@@ -40,6 +40,13 @@ Alex Xiang - alexx@unimelb.edu.au
 Xiang guo - xiaguo2@student.unimelb.edu.au
 
 ## Running
+
+    open Terminal
+    
+    java -jar project_backend-0.0.1-SNAPSHOT.jar
+    
+    Then the backend server has been listening
+
 ### For Mac & Linux: 
     
     open Terminal
@@ -57,6 +64,12 @@ Xiang guo - xiaguo2@student.unimelb.edu.au
     npm run start 
 
 Then you will run a react app on your computer browser.
+
+## Testing
+
+After running the backend server, use the link below
+
+http://127.0.0.1:8080/swagger-ui/index.html
 
 ## Tools
 * Repository - Github 
