@@ -65,6 +65,10 @@ Xiang guo - xiaguo2@student.unimelb.edu.au
 
 Then you will run a react app on your computer browser.
 
+## Deployment
+
+We use Tencent cloud server as our project deployment server.
+
 ## Testing
 
 After running the backend server, use the link below
