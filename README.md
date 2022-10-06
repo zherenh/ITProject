@@ -69,6 +69,8 @@ Then you will run a react app on your computer browser.
 
 We use Tencent cloud server as our project deployment server.
 
+http://81.68.222.89
+
 ## Testing
 
 After running the backend server, use the link below
