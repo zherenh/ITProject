@@ -52,8 +52,8 @@ class ProjectBackendApplicationTests {
 //      fileController.addFile("zhzhz", "http:fef", "好", "fe;fxlf;fef");
 //        List<File> allFile = fileMapper.getAllFile();
 //        System.out.println(allFile);
-        int haolo = fileController.updateFile("10.4", "http:2222", "nihaa", "qw1;qw2;qw3;qw4", 1);
-        System.out.println(haolo);
+//        int haolo = fileController.updateFile("10.4", "http:2222", "nihaa", "qw1;qw2;qw3;qw4", 1);
+//        System.out.println(haolo);
 //        HashMap<String, Object> fileMap = new HashMap<>();
 //        fileMap.put("linkName", "fefxxxxxx");
 //        fileMap.put("link", "http:2389hjh");
@@ -61,7 +61,18 @@ class ProjectBackendApplicationTests {
 //        fileMap.put("desc", "23xs");
 //        fileMap.put("id", 2);
 //        fileMapper.updateFile(fileMap);
-    }
-    
+//        List<String> linkByLabelName = fileMapper.getLinkByLabelName("%%");
+//        System.out.println(linkByLabelName);
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("fds1");
+        list1.add("fds1");
+        list1.add("fds2");
+        list1.add("fds3");
+        list1.add("fds4");
+        LinkedHashSet<String> hashSet = new LinkedHashSet<>(list1);
+        ArrayList<String> list2 = new ArrayList<>(hashSet);
+        System.out.println(list2);
+        }
+
 
 }

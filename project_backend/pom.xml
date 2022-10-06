@@ -74,11 +74,11 @@
             <artifactId>commons-collections</artifactId>
             <version>3.2.1</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>asm</groupId>-->
-<!--            <artifactId>asm</artifactId>-->
-<!--            <version>3.3.1</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>asm</groupId>-->
+        <!--            <artifactId>asm</artifactId>-->
+        <!--            <version>3.3.1</version>-->
+        <!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
         <dependency>
@@ -107,6 +107,7 @@
     </dependencies>
 
     <build>
+        <defaultGoal>compile</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -123,5 +124,5 @@
 
         </plugins>
     </build>
-<packaging>jar</packaging>
+    <packaging>jar</packaging>
 </project>

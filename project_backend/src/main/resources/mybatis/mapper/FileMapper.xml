@@ -24,12 +24,12 @@
 
 
     <select id="getLinkByLike" resultType="String">
-        select link from file where link like #{linkeName}
+        select distinct link from file where link like #{linkeName}
     </select>
 
 
     <select id="getLinkByLabelName" resultType="String">
-        select link from file where id in (select link_id from label where label_name like #{labelName});
+        select distinct link from file where id in (select link_id from label where label_name like #{labelName});
 
     </select>
 

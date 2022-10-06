@@ -31,7 +31,7 @@ public class FileController {
     public Object getAllFile() {
         List<File> allFile = fileService.getAllFile();
         Object result = JSONObject.toJSON(allFile);
-        System.out.println(result);
+//        System.out.println(result);
         return result;
     }
 //    @ApiOperation("更新文件")
@@ -63,8 +63,8 @@ public class FileController {
         Date createDate = new Date();
         String[] labels = label.split(";");
 
-        System.out.println(labels);
-        List<String> linkByLike = fileService.getLinkByLike(linkName);
+//        System.out.println(labels);
+        List<String> linkByLike = fileService.getLinkByLike(link);
         File file = new File(linkName, link, createDate, desc);
         if (linkByLike.size() != 0) {
             return 2;
@@ -92,7 +92,7 @@ public class FileController {
     public String searchLinkByLabels(@Param("labelName") String labelName) {
         List<String> link = fileService.getLinkByLabelName(labelName);
         String links = JSONObject.toJSONString(link);
-        System.out.println("links=>" + links);
+//        System.out.println("links=>" + links);
         return links;
     }
     @ApiOperation("查找文件id")
@@ -101,7 +101,7 @@ public class FileController {
     public String searchFileId(@Param("id") int id) {
         File fileById = fileService.getFileById(id);
         String file = JSONObject.toJSONString(fileById);
-        System.out.println("files=>" + file);
+//        System.out.println("files=>" + file);
         return file;
     }
     @ApiOperation("根据标签查找链接")
