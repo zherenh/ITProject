@@ -77,7 +77,7 @@ export default class Search extends Component {
 				<div  style={{width:"35%",height:"66%",background:"white",position:"absolute",
 				left:"59%",top:"17%",overflow:"hidden",zIndex:"999",display:this.state.showElem}} >
 					{this.state.links&&this.state.links.map((item,index) => <div key={index}  className={classes.item_one} >
-                        <a href={item}>{item}</a>
+                        <a className={classes.link} href={item}>{item}</a>
 
                     </div>)}
 				</div>
