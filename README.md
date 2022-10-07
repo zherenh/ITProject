@@ -53,6 +53,8 @@ Xiang guo - xiaguo2@student.unimelb.edu.au
 
     cd project
     
+    npm install
+    
     npm start
 
 ### For Windows: 
@@ -60,6 +62,8 @@ Xiang guo - xiaguo2@student.unimelb.edu.au
     open Terminal
     
     cd project 
+    
+    npm install
     
     npm run start 
 
