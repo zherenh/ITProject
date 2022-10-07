@@ -195,10 +195,10 @@ export default class Modify extends Component {
                         <input type="text" name={"labels"} value={this.state.labels} onChange={this.changeLabels}
                                placeholder=' Label'/>
                     </div>
-                    <button className={classes.submit} onClick={this.toBack}>
+                    <button className={classes.back} onClick={this.toBack}>
                         Back
                     </button>
-                    <button className={classes.submit} onClick={this.toSumbitUpdate}>
+                    <button className={classes.update} onClick={this.toSumbitUpdate}>
                         Update
                     </button>
                 </div>
