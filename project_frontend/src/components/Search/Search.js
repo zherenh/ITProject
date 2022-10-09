@@ -74,8 +74,7 @@ export default class Search extends Component {
 				<div className={classes.Lables}>
 					{this.state.labelList&&this.state.labelList.map((item,index) => <div key={index} id={item} onClick={this.showLinksByLabel} className={classes.item_one} >{item}</div>)}
 				</div>
-				<div  style={{width:"35%",height:"66%",background:"white",position:"absolute",
-				left:"59%",top:"17%",overflow:"hidden",zIndex:"999",display:this.state.showElem}} >
+				<div className={classes.linkBox} style={{display:this.state.showElem}} >
 					{this.state.links&&this.state.links.map((item,index) => <div key={index}  className={classes.item_one} >
                         <a className={classes.link} href={item}>{item}</a>
 
