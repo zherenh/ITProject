@@ -16,6 +16,7 @@
   position: absolute;
   left: 25%;
   top: -25%;
+  z-index: 10000;
 }
 .Modify .Stone2 {
   width: 35%;
@@ -41,7 +42,6 @@
   transform: rotate(200deg);
   z-index: -1;
 }
-
 .Modify .linkContainer {
   overflow: auto;
   width: 80%;
@@ -57,7 +57,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .Modify .linkContainer .linkBox .link {
   width: 100%;
   height: 50px;
@@ -71,25 +70,21 @@
   font-weight: 600;
   font-size: 20px;
 }
-
-.Modify .linkContainer .linkBox .link .text { 
-  padding-left: 10%;
+.Modify .linkContainer .linkBox .link .text {
+  padding-left: 6%;
   width: 60%;
   text-align: left;
   justify-content: center;
 }
-
-.Modify .linkContainer .linkBox .link .labelContainer { 
+.Modify .linkContainer .linkBox .link .labelContainer {
   display: flex;
   width: 40%;
   height: 100%;
   text-align: center;
   justify-content: flex-end;
-  
   padding-right: 2%;
   padding-top: 0.5%;
 }
-
 .Modify .linkContainer .linkBox .link .labelContainer .label {
   margin-left: 5%;
   flex: 1;
@@ -104,8 +99,7 @@
   line-height: 40px;
   background-color: rgba(192, 192, 192, 0.6);
 }
-
-.Modify .linkContainer .linkBox .buttonBar { 
+.Modify .linkContainer .linkBox .buttonBar {
   display: flex;
   width: 18%;
   height: 50px;
@@ -113,7 +107,6 @@
   align-items: center;
   margin-left: 1%;
 }
-
 .Modify .linkContainer .linkBox .deleteButton {
   margin-left: 4%;
   flex: 1;
@@ -126,7 +119,6 @@
   line-height: 40px;
   background-color: #FF97C3;
 }
-
 .Modify .linkContainer .linkBox .editButton {
   margin-left: 8%;
   flex: 1;
@@ -139,8 +131,7 @@
   line-height: 40px;
   background-color: #809dff;
 }
-
-.Modify .mybox { 
+.Modify .mybox {
   width: 80%;
   min-height: 500px;
   margin-top: 10%;
@@ -148,8 +139,7 @@
   text-align: center;
   justify-content: center;
 }
-
-.Modify .mybox .ipt_box { 
+.Modify .mybox .ipt_box {
   margin: 30px 0px;
   display: flex;
   margin-left: 10%;
@@ -158,7 +148,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .Modify .mybox .ipt_box input {
   padding-left: 5%;
   width: 95%;
@@ -171,8 +160,7 @@
   font-weight: 600;
   font-size: 20px;
 }
-
-.Modify .mybox .back { 
+.Modify .mybox .back {
   min-width: 120px; 
   margin-top: 5%;
   flex: 1;
@@ -185,8 +173,7 @@
   font-size: 30px;
   background-color: #809dff;
 }
-
-.Modify .mybox .update { 
+.Modify .mybox .update {
   min-width: 120px; 
   margin-top: 5%;
   margin-left: 4%;
@@ -223,10 +210,11 @@
   .Modify .Stone2 { 
     display:none;
   }
-  
+
   .Modify .Stone3 { 
     display:none;
   }
 }
 
+/*# sourceMappingURL=./Modify.module.css.map */
 /*# sourceMappingURL=./Modify.module.css.map */
