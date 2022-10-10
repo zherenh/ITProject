@@ -14,43 +14,44 @@
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  right: -440px;
-  top: 130px;
+  right: -35%;
+  top: 20%;
 }
 .Add .LeftStone {
   width: 60%;
   height: 100%;
   background-size: 60% 60%;
-  background-image: url(../../../public/img/NewNoiseLights5.png);
+  background-image: url(../../../public/img/NewNoiseLights4.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  right: -440px;
-  top: 130px;
   width: 20%;
   height: 60%;
-  right: none;
-  left: -160px;
-  top: 30px;
+  left: -10%;
+  top: 5%;
   background-image: url(../../../public/img/NewNoiseLights9.png);
 }
+
 .Add .ButtomStone {
   width: 30%;
   height: 60%;
-  background-image: url(../../../public/img/NewNoiseLights6.png);
+  background-image: url(../../../public/img/NewNoiseLights2.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  left: -20px;
-  top: 500px;
+  left: 0;
+  top: 75%;
   z-index: -1;
   transform: rotate(90deg);
 }
+
 .mybox {
-  width: 800px;
+  width: 60%;
+  padding-top: 2%;
   min-height: 500px;
   margin-top: 50px;
-  /* background-color: red; */
+  height:80%;
+  
 }
 .mybox .title {
   margin-bottom: -20px;
@@ -96,4 +97,33 @@
   font-size: 20px;
   background-color: #ffff;
 }
+
+@media (max-width: 900px) { 
+  .Add .LeftStone { 
+    display:none;
+  }
+
+  .Add .RightStone { 
+    display:none;
+  }
+
+  .Add .ButtomStone { 
+    display:none;
+  }
+}
+
+@media (max-height: 600px) { 
+  .Add .LeftStone { 
+    display:none;
+  }
+
+  .Add .RightStone { 
+    display:none;
+  }
+
+  .Add .ButtomStone { 
+    display:none;
+  }
+}
+
 /*# sourceMappingURL=./Add.module.css.map */

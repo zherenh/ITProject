@@ -10,7 +10,9 @@ const Home = () => {
             <div className={classes.Stone1}></div>
             <div className={classes.Stone2}></div>
             <p className={classes.Title}>Labels<p>House</p></p>
-            <div className={classes.Describe}>This Website is used to store the labels of link whatever legal or not, and opened to anyone.</div>
+            <div className={classes.Describe}>
+                This Website is used to store the labels of link whatever legal or not, and opened to anyone.
+            </div>
             <button className={classes.Start}>
                 <Link to='search'>Start</Link>
             </button>
