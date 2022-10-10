@@ -14,8 +14,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  left: 300px;
-  top: -170px;
+  left: 25%;
+  top: -25%;
   z-index: 10000;
 }
 .Modify .Stone2 {
@@ -71,7 +71,7 @@
   font-size: 20px;
 }
 .Modify .linkContainer .linkBox .link .text {
-  padding-left: 10%;
+  padding-left: 6%;
   width: 60%;
   text-align: left;
   justify-content: center;
@@ -132,7 +132,7 @@
   background-color: #809dff;
 }
 .Modify .mybox {
-  width: 1000px;
+  width: 80%;
   min-height: 500px;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -161,6 +161,7 @@
   font-size: 20px;
 }
 .Modify .mybox .back {
+  min-width: 120px; 
   margin-top: 5%;
   flex: 1;
   border-radius: 20px;
@@ -173,6 +174,7 @@
   background-color: #809dff;
 }
 .Modify .mybox .update {
+  min-width: 120px; 
   margin-top: 5%;
   margin-left: 4%;
   flex: 1;
@@ -185,5 +187,35 @@
   font-size: 30px;
   background-color: #FF97C3;
 }
+
+
+@media (max-width: 1100px) { 
+  .Modify .Stone1 { 
+    display:none;
+  }
+
+  .Modify .Stone2 { 
+    display:none;
+  }
+
+  .Modify .Stone3 { 
+    display:none;
+  }
+}
+
+@media (max-height: 660px) { 
+  .Modify .Stone1 { 
+    display:none;
+  }
+
+  .Modify .Stone2 { 
+    display:none;
+  }
+
+  .Modify .Stone3 { 
+    display:none;
+  }
+}
+
 /*# sourceMappingURL=./Modify.module.css.map */
 /*# sourceMappingURL=./Modify.module.css.map */

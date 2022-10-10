@@ -15,7 +15,7 @@
   background-size: 180% 180%;
   background-position: center center;
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: 1;
 }
 .Search .Stone1 {
   width: 40%;
@@ -53,7 +53,7 @@
 }
 .Search .Lables {
   width: 60%;
-  height: 35%;
+  height: 45%;
   margin: 40px auto;
   border: 3px solid white;
   border-radius: 12px;
@@ -75,13 +75,26 @@
   line-height: 23px;
   font-weight: bolder;
 }
-.Search div .link {
+
+.Search .linkBox { 
+  width: 58%;
+  height: 23%;
+  background: grey;
+  opacity: 80%;
+  position: absolute;
+  left: 21%;
+  top: 62%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.Search .linkBox .link{ 
   margin: 20px;
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(192, 192, 192, 0.6);
+  background-color: white;
   border: none;
   color: black;
   font-weight: 600;
