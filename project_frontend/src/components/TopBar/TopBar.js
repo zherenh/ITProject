@@ -5,12 +5,10 @@ import { Link } from 'react-router-dom'
 const TopBar = () => {
     return (
         <div className={classes.TopBar}>
-            <div>Login</div>
-            <div>Register</div>
-            <div className={classes.Space}></div>
             <div>
                 <Link to='/'>Home</Link>
             </div>
+            <div className={classes.Space}></div>
             <div>
                 <Link to='/Profile'>Profile</Link>
             </div>
@@ -23,7 +21,6 @@ const TopBar = () => {
             <div>
                 <Link to='/modify'>Modify</Link>
             </div>
-            <div>About us</div>
         </div>
     )
 }

@@ -50,7 +50,7 @@ export default class Profile extends Component {
                         Profile
                     </div>
                     <div className={classes.ipt_box}>
-                        <input type="text"    onChange={this.change}  placeholder='Search the label or link'/>
+                        <input type="text"   onChange={this.change}  placeholder='Search the label or link'/>
                     </div>
                     <div className={classes.lebal_box}>
                         <div className={classes.left_box}>
