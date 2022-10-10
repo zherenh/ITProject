@@ -7,6 +7,7 @@
   justify-content: center;
   position: fixed;
 }
+
 .Search .Img {
   margin: 0 auto;
   width: 30%;
@@ -15,8 +16,9 @@
   background-size: 180% 180%;
   background-position: center center;
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: 1;
 }
+
 .Search .Stone1 {
   width: 40%;
   height: 60%;
@@ -27,6 +29,7 @@
   left: -150px;
   top: 400px;
 }
+
 .Search .Stone2 {
   width: 40%;
   height: 80%;
@@ -38,10 +41,12 @@
   top: 80px;
   transform: rotate(30deg);
 }
+
 .Search .SearchingPart {
   display: flex;
   margin-top: -20px;
 }
+
 .Search .SearchingPart .Bar {
   margin: 0 auto;
   width: 60%;
@@ -51,9 +56,10 @@
   border: 3px solid white;
   color: white;
 }
+
 .Search .Lables {
   width: 60%;
-  height: 35%;
+  height: 45%;
   margin: 40px auto;
   border: 3px solid white;
   border-radius: 12px;
@@ -63,6 +69,7 @@
   align-items: flex-start;
   align-content: flex-start;
 }
+
 .Search .Lables .item_one {
   text-align: center;
   margin: 7px;
@@ -75,17 +82,52 @@
   line-height: 23px;
   font-weight: bolder;
 }
-.Search div .link {
+
+.Search .linkBox { 
+  width: 58%;
+  height: 23%;
+  background: grey;
+  opacity: 80%;
+  position: absolute;
+  left: 21%;
+  top: 62%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.Search .linkBox .link{ 
   margin: 20px;
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(192, 192, 192, 0.6);
+  background-color: white;
   border: none;
   color: black;
   font-weight: 600;
   border-radius: 20px;
   height: 40px;
 }
+
+@media (max-width: 900px) { 
+  .Search .Stone1 { 
+    display: none;
+  }
+
+  .Search .Stone2 { 
+    display: none;
+  }
+}
+
+@media (max-height: 600px) { 
+  .Search .Stone1 { 
+    display: none;
+  }
+
+  .Search .Stone2 { 
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=./Search.module.css.map */
