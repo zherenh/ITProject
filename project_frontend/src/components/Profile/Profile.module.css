@@ -1,7 +1,6 @@
 .clearFloat {
   clear: both;
 }
-
 .Profile {
   display: flex;
   justify-content: center;
@@ -10,7 +9,6 @@
   background-color: #0f0f0f;
   position: fixed;
 }
-
 .Profile .RightStone {
   width: 60%;
   height: 100%;
@@ -19,11 +17,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  right: -30%;
-  top: 20%;
-
+  right: -440px;
+  top: -80px;
 }
-
 .Profile .LeftStone {
   height: 100%;
   background-size: 60% 60%;
@@ -31,13 +27,16 @@
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  width: 20%;
-  height: 60%;
-  left: -10%;
-  top: 8%;
-  background-image: url(../../../public/img/NewNoiseLights9.png);
+  right: -440px;
+  top: -80px;
+  width: 60%;
+  height: 70%;
+  right: none;
+  left: -400px;
+  top: 250px;
+  background-image: url(../../../public/img/NewNoiseLights6.png);
+  transform: rotate(250deg);
 }
-
 .Profile .Title {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -47,16 +46,13 @@
   left: 60%;
   top: 5%;
 }
-
 .Profile .Title p {
   display: inline;
   font-style: italic;
 }
-
 .Profile .Background {
   overflow: hidden;
 }
-
 .Profile .Describe {
   position: absolute;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -66,7 +62,6 @@
   left: 5%;
   top: 63%;
 }
-
 .Profile .Start {
   cursor: pointer;
   position: absolute;
@@ -79,18 +74,15 @@
   border-radius: 50px;
   border: 2px white solid;
 }
-
 .Profile .Start a {
   color: white;
   text-decoration: none;
 }
-
 .Profile .Auth {
   position: absolute;
   left: 5%;
   top: 10%;
 }
-
 .Profile .Auth button {
   font-size: 25px;
   margin-right: 15px;
@@ -98,14 +90,12 @@
   background-color: transparent;
   border: none;
 }
-
 .mybox {
   margin-top: 100px;
   width: 100%;
   min-height: 500px;
   /* background-color: red; */
 }
-
 .mybox .title {
   display: flex;
   justify-content: center;
@@ -113,7 +103,6 @@
   font-size: 40px;
   color: #ffff;
 }
-
 .mybox .ipt_box {
   margin: 20px auto;
   display: flex;
@@ -122,30 +111,24 @@
   color: #fff;
   font-weight: 600;
   width: 60%;
-  background: transparent;
 }
-
 .mybox .ipt_box input::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: grey;
-  width: 100%;
-  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
 }
-
 .mybox .ipt_box input:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #fff;
   font-weight: 600;
 }
-
 .mybox .ipt_box input::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #fff;
   font-weight: 600;
 }
-
 .mybox .ipt_box input {
-  padding-left: 2%;
+  padding-left: 5%;
   width: 95%;
   height: 50px;
   border-radius: 10px;
@@ -153,13 +136,12 @@
   border: 2px solid #e9e9e9;
   background-color: transparent;
   color: #fff;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 20px;
 }
-
 .mybox .ipt_box input:focus {
   outline: none;
 }
-
 .mybox .submit {
   display: flex;
   justify-content: center;
@@ -173,14 +155,12 @@
   font-size: 20px;
   background-color: #ffff;
 }
-
 .lebal_box {
   width: 60%;
   margin: 10px auto 0px;
   display: flex;
   justify-content: space-between;
 }
-
 .lebal_box .title {
   width: 100%;
   margin: 5px 0px;
@@ -192,35 +172,30 @@
   font-weight: 600;
 }
 .lebal_box .left_box {
-  width: 45%;
-  flex-wrap: wrap;
+  width: 40%;
 }
-
 .lebal_box .right_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  width: 45%;
+  width: 40%;
 }
-
 .lebal_box .item_one {
   float: left;
-  margin-left: 4%;
+  margin-left: 3%;
   margin-top: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 22%;
   height: 40px;
   border-radius: 20px;
   background-color: rgba(192, 192, 192, 0.6);
   border: none;
   color: #fff;
   font-weight: 600;
-  min-width: 50px;
 }
-
 .lebal_box .item_one2 {
   margin-top: 20px;
   width: 100%;
@@ -234,11 +209,9 @@
   border-radius: 20px;
   height: 40px;
 }
-
 .lebal_box .item_one2 span {
   margin-left: 20px;
 }
-
 .lebal_box .ignore {
   margin: 20px auto;
   display: flex;
@@ -258,25 +231,4 @@
   width: 100%;
   height: 100%;
 }
-
-@media (max-width: 900px) { 
-  .Profile .LeftStone { 
-    display: none;
-  }
-
-  .Profile .RightStone { 
-    display: none;
-  }
-}
-
-@media (max-height: 600px) { 
-  .Profile .LeftStone { 
-    display: none;
-  }
-
-  .Profile .RightStone { 
-    display: none;
-  }
-}
-
 /*# sourceMappingURL=./Profile.module.css.map */

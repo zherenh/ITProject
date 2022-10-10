@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const TopBar = () => {
     return (
         <div className={classes.TopBar}>
-            <div>
+            <div className={classes.botton}>
                 <Link to='/'>Home</Link>
             </div>
             <div className={classes.Space}></div>
