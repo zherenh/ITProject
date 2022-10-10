@@ -15,19 +15,19 @@
   width: 60%;
   height: 100%;
   background-size: 60% 60%;
-  background-image: url(../../../public/img/NewNoiseLights5.png);
+  background-image: url(../../../public/img/NewNoiseLights8.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
   right: -30%;
   top: 20%;
+
 }
 
 .Profile .LeftStone {
-  width: 60%;
   height: 100%;
   background-size: 60% 60%;
-  background-image: url(../../../public/img/NewNoiseLights5.png);
+  background-image: url(../../../public/img/NewNoiseLights8.png);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
