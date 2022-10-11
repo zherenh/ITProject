@@ -14,7 +14,7 @@ export default class Search extends Component {
 		};
 	}
 	componentDidMount() {
-		console.log("调用了componentDidMount")
+		console.log("invoke componentDidMount")
 		this.getLabels(this.state.keyword);
 	}
 	getLinks = (labelName) => {
@@ -25,10 +25,10 @@ export default class Search extends Component {
 		}).then(
 			res => {
 				this.setState({links:res.data});
-				console.log('成功了', this.state.links);
+				console.log('Succeed', this.state.links);
 			},
 			error => {
-				console.log('失败了', error);
+				console.log('Failed', error);
 			}
 		)
 	}
@@ -45,7 +45,7 @@ export default class Search extends Component {
 				this.setState({labelList:res.data[1].labels});
 			},
 			error => {
-				console.log('失败了', error);
+				console.log('Failed', error);
 			}
 		)
 	}

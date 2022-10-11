@@ -31,7 +31,7 @@ export default class Profile extends Component {
                 console.log(this.state.labelList)
                 },
             error => {
-                console.log('失败了', error);
+                console.log('Failed', error);
             }
         )
     }

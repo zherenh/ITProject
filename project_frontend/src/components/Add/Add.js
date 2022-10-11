@@ -28,19 +28,19 @@ export default class Add extends Component {
             res => {
                 if (res.data == 1) {
                     // alert("添加成功")
-                    swal("添加成功","","success")
+                    swal("Add Successfully","","success")
                 } else if (res.data == 2) {
                     // alert("链接已存在")
-                    swal("链接已存在","","error")
+                    swal("Link Already Existed","","error")
                 } else if (res.data == 0) {
                     // alert("添加失败")
-                    swal("添加失败","","error")
+                    swal("Failed","","error")
 
                 }
                 this.setState({linkName: '', link: '', desc: '', labels: ''})
             },
             error => {
-                console.log('失败了', error);
+                console.log('Failed', error);
             }
         )
         ev.preventDefault(false)

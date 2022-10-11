@@ -29,7 +29,7 @@ export default class Modify extends Component {
 
             },
             error => {
-                console.log('失败了', error);
+                console.log('Failed', error);
             }
         )
     }
@@ -56,7 +56,7 @@ export default class Modify extends Component {
                 }, 0);
             },
             error => {
-                console.log('失败了', error);
+                console.log('Failed', error);
             }
         )
     }
@@ -75,15 +75,15 @@ export default class Modify extends Component {
             res => {
                 if (res.data != 0) {
                     // alert("删除成功")
-                    swal("删除成功", "","success");
+                    swal("Delete Successfully", "","success");
                     this.getAllFiles()
                 } else {
                     // alert("删除失败")
-                    swal("删除失败","", "error");
+                    swal("Failed","", "error");
                 }
             },
             error => {
-                console.log('失败了', error);
+                console.log('Failed', error);
             }
         )
 
@@ -134,19 +134,19 @@ export default class Modify extends Component {
             res => {
                 if (res.data == 1) {
                     // alert("修改成功")
-                    swal("修改成功","", "success");
+                    swal("Modify Successfully", "", "success");
 
                     this.setState({showElem1: "block"})
                     this.setState({showElem2: "none"})
                     this.getAllFiles()
                 } else if (res.data == 0) {
                     // alert("修改失败")
-                    swal("修改失败", "","success");
+                    swal("Failed", "","success");
                 }
 
             },
             error => {
-                console.log('失败了', error);
+                console.log('Failed', error);
             }
         )
     }
