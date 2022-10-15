@@ -118,6 +118,7 @@
   height: 80%;
   line-height: 40px;
   background-color: #FF97C3;
+  cursor: pointer;
 }
 .Modify .linkContainer .linkBox .editButton {
   margin-left: 8%;
@@ -130,6 +131,7 @@
   height: 80%;
   line-height: 40px;
   background-color: #809dff;
+  cursor: pointer;
 }
 .Modify .mybox {
   width: 80%;
@@ -172,6 +174,7 @@
   font-weight: bold;
   font-size: 30px;
   background-color: #809dff;
+  cursor: pointer;
 }
 .Modify .mybox .update {
   min-width: 120px;
@@ -186,6 +189,7 @@
   font-weight: bold;
   font-size: 30px;
   background-color: #FF97C3;
+  cursor: pointer;
 }
 @media (max-width: 1100px) {
   .Modify .Stone1 {

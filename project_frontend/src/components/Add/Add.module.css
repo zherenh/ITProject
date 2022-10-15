@@ -54,7 +54,7 @@
   
 }
 .mybox .title {
-  margin-bottom: -20px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@
   font-style: italic;
 }
 .mybox .ipt_box {
-  margin: 30px 0px;
+  margin: 50px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +96,7 @@
   font-weight: 600;
   font-size: 20px;
   background-color: #ffff;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) { 
