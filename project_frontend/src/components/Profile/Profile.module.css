@@ -207,8 +207,9 @@
   border-radius: 20px;
   height: 40px;
 }
-.lebal_box .item_one2 span {
+.lebal_box .item_one2 .link {
   margin-left: 20px;
+  color: white;
 }
 .lebal_box .ignore {
   margin: 20px auto;

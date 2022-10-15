@@ -64,7 +64,7 @@ export default class Profile extends Component {
                             <div className={classes.title}>
                                 Links
                             </div>
-                            {this.state.linkList&&this.state.linkList.splice(0,6).map((item,index) => <div key={index} className={classes.item_one2}><span>{item}</span></div>)}
+                            {this.state.linkList&&this.state.linkList.splice(0,6).map((item,index) => <div key={index} className={classes.item_one2}><a className={classes.link} href={item}>{item}</a></div>)}
                         </div>
                     </div>
                 </div>
