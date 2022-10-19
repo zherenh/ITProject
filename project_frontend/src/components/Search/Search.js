@@ -77,7 +77,6 @@ export default class Search extends Component {
 				<div className={classes.linkBox} style={{display:this.state.showElem}} >
 					{this.state.links&&this.state.links.map((item,index) => <div key={index}  className={classes.item_one} >
                         <a className={classes.link} href={item}>{item}</a>
-
                     </div>)}
 				</div>
 			</div>

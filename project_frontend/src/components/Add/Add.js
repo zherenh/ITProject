@@ -89,7 +89,7 @@ export default class Add extends Component {
                                placeholder=' Description'/>
                     </div>
                     <div className={classes.ipt_box}>
-                        <input type="text" value={this.state.labels} onChange={this.changeLabels} placeholder=' Label'/>
+                        <input type="text" value={this.state.labels} onChange={this.changeLabels} placeholder=' Label' autoComplete='on'/>
                     </div>
 
                     <button className={classes.submit} onClick={this.toAdd}>
