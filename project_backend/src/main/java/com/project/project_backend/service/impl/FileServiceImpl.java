@@ -25,7 +25,10 @@ public class FileServiceImpl implements FileService {
     }
 
     @Override
-    public List<String> getLinkByLabelName(String labelName) {
+//    public List<String> getLinkByLabelName(String labelName) {
+//        return fileMapper.getLinkByLabelName(labelName);
+//    }
+    public List<File> getLinkByLabelName(String labelName) {
         return fileMapper.getLinkByLabelName(labelName);
     }
 

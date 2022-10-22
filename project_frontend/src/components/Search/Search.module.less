@@ -82,6 +82,9 @@
             line-height: 23px;
             font-weight: bolder;
         }
+        .item_one:hover{
+         cursor: pointer;
+        }
     }
 
     div .link {
@@ -125,7 +128,21 @@
     border-radius: 20px;
     height: 40px;
 }
-
+.Search .linkBox .link .desc{
+    position: absolute;
+    top: -21%;
+    width: 40%;
+    height: 60px;
+    right: -7%;
+    background: #b2bfee;
+    display: none;
+    padding: 1%;
+    border-radius: 10px;
+    z-index: 999;
+}
+.Search .linkBox .link:hover .desc{
+    display: block;
+}
 @media (max-width: 900px) {
     .Search .Stone1 {
         display: none;

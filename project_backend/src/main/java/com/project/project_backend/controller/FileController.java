@@ -5,13 +5,9 @@ import com.project.project_backend.pojo.File;
 import com.project.project_backend.pojo.Label;
 import com.project.project_backend.service.FileService;
 import com.project.project_backend.service.LabelService;
-import com.project.project_backend.service.impl.FileServiceImpl;
-//import com.sun.xml.internal.ws.developer.StreamingAttachment;
-//import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.*;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -31,15 +27,9 @@ public class FileController {
     public Object getAllFile() {
         List<File> allFile = fileService.getAllFile();
         Object result = JSONObject.toJSON(allFile);
-//        System.out.println(result);
         return result;
     }
-//    @ApiOperation("更新文件")
-//    @RequestMapping("/updateFile")
-//    public File updateFile(int id) {
-//        File file = fileService.getFileById(id);
-//        return file;
-//    }
+
     @ApiOperation("删除文件")
     @ApiParam(name ="id",value = "需要删除的id",required = true)
     @GetMapping("/deleteFileById")
@@ -63,7 +53,7 @@ public class FileController {
         Date createDate = new Date();
         String[] labels = label.split(";");
 
-//        System.out.println(labels);
+        System.out.println("labels=>"+labels);
         List<String> linkByLike = fileService.getLinkByLike(link);
         File file = new File(linkName, link, createDate, desc);
         if (linkByLike.size() != 0) {
@@ -90,10 +80,10 @@ public class FileController {
     @GetMapping("/searchLinkByLabels")
     @ApiParam(name ="labelName",value = "查找指定标签下的链接",required = true)
     public String searchLinkByLabels(@Param("labelName") String labelName) {
-        List<String> link = fileService.getLinkByLabelName(labelName);
-        String links = JSONObject.toJSONString(link);
-//        System.out.println("links=>" + links);
-        return links;
+
+        List<File> file = fileService.getLinkByLabelName(labelName);
+        String files = JSONObject.toJSONString(file);
+        return files;
     }
     @ApiOperation("查找文件id")
     @GetMapping("/searchFileId")
@@ -101,7 +91,6 @@ public class FileController {
     public String searchFileId(@Param("id") int id) {
         File fileById = fileService.getFileById(id);
         String file = JSONObject.toJSONString(fileById);
-//        System.out.println("files=>" + file);
         return file;
     }
     @ApiOperation("根据标签查找链接")

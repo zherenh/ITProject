@@ -17,7 +17,8 @@ public interface FileMapper {
     List<String> getLinkByLike(@Param("linkeName")String linkeName);
 
     //根据label_name搜索link
-    List<String> getLinkByLabelName(@Param("labelName") String labelName);
+//    List<String> getLinkByLabelName(@Param("labelName") String labelName);
+    List<File> getLinkByLabelName(@Param("labelName") String labelName);
 
     //根据id删除file
     int deleteFileById(@Param("id")Integer id);

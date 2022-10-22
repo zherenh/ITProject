@@ -28,8 +28,8 @@
     </select>
 
 
-    <select id="getLinkByLabelName" resultType="String">
-        select distinct link from file where id in (select link_id from label where label_name like #{labelName});
+    <select id="getLinkByLabelName" resultType="file">
+        select  * from file where id in (select link_id from label where label_name like #{labelName});
 
     </select>
 

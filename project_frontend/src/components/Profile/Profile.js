@@ -20,6 +20,7 @@ export default class Profile extends Component {
         console.log(this.state.keyword=='')
         console.log(this.state.keyword)
         axios.get('http://81.68.222.89:8080/research',{
+        // axios.get('http://127.0.0.1:8080/research',{
             params:{
                 keywords:keywords
             }

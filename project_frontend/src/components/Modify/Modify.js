@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import TopBar from '../TopBar/TopBar'
 import classes from './Modify.module.css'
 import axios from "axios";
@@ -23,9 +23,10 @@ export default class Modify extends Component {
 
     getAllFiles = () => {
         axios.get('http://81.68.222.89:8080/file/getAllFile'
+        // axios.get('http://127.0.0.1:8080/file/getAllFile'
         ).then(
             res => {
-                this.setState({ Files: res.data })
+                this.setState({Files: res.data})
 
             },
             error => {
@@ -36,16 +37,17 @@ export default class Modify extends Component {
 
     getFileById = (id) => {
         axios.get('http://81.68.222.89:8080/file/searchFileId', {
-            params: {
-                id: id
+        // axios.get('http://127.0.0.1:8080/file/searchFileId', {
+                params: {
+                    id: id
+                }
             }
-        }
         ).then(
             res => {
                 setTimeout(() => {
-                    var item = "";
+                    var item="";
                     res.data.labels.forEach((label) => {
-                        item += label.labelName + ";"
+                        item+=label.labelName+";"
                     })
                     this.setState({
                         linkName: res.data.linkName,
@@ -68,6 +70,7 @@ export default class Modify extends Component {
 
     deleteFileById = (ev) => {
         axios.get('http://81.68.222.89:8080/file/deleteFileById', {
+        // axios.get('http://127.0.0.1:8080/file/deleteFileById', {
             params: {
                 id: ev.target.value
             }
@@ -75,11 +78,11 @@ export default class Modify extends Component {
             res => {
                 if (res.data != 0) {
                     // alert("删除成功")
-                    swal("Delete Successfully", "", "success");
+                    swal("Delete Successfully", "","success");
                     this.getAllFiles()
                 } else {
                     // alert("删除失败")
-                    swal("Failed", "", "error");
+                    swal("Failed","", "error");
                 }
             },
             error => {
@@ -89,17 +92,15 @@ export default class Modify extends Component {
 
     }
     toUpdate = (ev) => {
-        this.setState({ showElem1: "none" })
-        this.setState({ showElem2: "block" })
-        this.setState({ id: ev.target.value })
+        this.setState({showElem1: "none"})
+        this.setState({showElem2: "block"})
+        this.setState({id:ev.target.value})
         this.getFileById(ev.target.value)
-
-
 
     }
     toBack = () => {
-        this.setState({ showElem1: "block" })
-        this.setState({ showElem2: "none" })
+        this.setState({showElem1: "block"})
+        this.setState({showElem2: "none"})
     }
     changeLinkName = (event) => {
         this.setState({
@@ -123,12 +124,13 @@ export default class Modify extends Component {
     };
     toSumbitUpdate = () => {
         axios.get('http://81.68.222.89:8080/file/updateFile', {
+        // axios.get('http://127.0.0.1:8080/file/updateFile', {
             params: {
                 linkName: this.state.linkName,
                 link: this.state.link,
                 desc: this.state.desc,
                 label: this.state.labels,
-                id: this.state.id
+                id:this.state.id
             }
         }).then(
             res => {
@@ -136,12 +138,12 @@ export default class Modify extends Component {
                     // alert("修改成功")
                     swal("Modify Successfully", "", "success");
 
-                    this.setState({ showElem1: "block" })
-                    this.setState({ showElem2: "none" })
+                    this.setState({showElem1: "block"})
+                    this.setState({showElem2: "none"})
                     this.getAllFiles()
                 } else if (res.data == 0) {
                     // alert("修改失败")
-                    swal("Failed", "", "success");
+                    swal("Failed", "","success");
                 }
 
             },
@@ -158,15 +160,16 @@ export default class Modify extends Component {
                 <div className={classes.Stone1}></div>
                 <div className={classes.Stone2}></div>
                 <div className={classes.Stone3}></div>
-                <div className={classes.linkContainer} style={{ display: this.state.showElem1 }}>
-                    {this.state.Files && this.state.Files.map((file, index) => <div key={index} className={classes.linkBox}>
+                <div className={classes.linkContainer} style={{display: this.state.showElem1}}>
+                    {this.state.Files && this.state.Files.map((file, index) => <div key={index}
+                                                                                    className={classes.linkBox}>
                         <div className={classes.link}>
                             <div className={classes.text}>
                                 {file.link}
                             </div>
                             <div className={classes.labelContainer}>
                                 {file.labels && file.labels.map((label, index) => <div key={index}
-                                    className={classes.label}>{label.labelName}</div>)}
+                                                                                       className={classes.label}>{label.labelName}</div>)}
                             </div>
                         </div>
                         <div className={classes.buttonBar}>
@@ -177,22 +180,22 @@ export default class Modify extends Component {
                     </div>)}
                 </div>
 
-                <div className={classes.mybox} style={{ display: this.state.showElem2, marginTop: "10%" }}>
+                <div className={classes.mybox} style={{display: this.state.showElem2, marginTop: "10%"}}>
                     <div className={classes.ipt_box}>
                         <input type="text" name={"linkName"} value={this.state.linkName} onChange={this.changeLinkName}
-                            placeholder=' Customized Name' />
+                               placeholder=' Customized Name'/>
                     </div>
                     <div className={classes.ipt_box}>
                         <input type="text" name={"link"} value={this.state.link} onChange={this.changeLink}
-                            placeholder=' Link' />
+                               placeholder=' Link'/>
                     </div>
                     <div className={classes.ipt_box}>
                         <input type="text" name={"desc"} value={this.state.desc} onChange={this.changeDesc}
-                            placeholder=' Description' />
+                               placeholder=' Description'/>
                     </div>
                     <div className={classes.ipt_box}>
                         <input type="text" name={"labels"} value={this.state.labels} onChange={this.changeLabels}
-                            placeholder=' Label' />
+                               placeholder=' Label'/>
                     </div>
                     <button className={classes.back} onClick={this.toBack}>
                         Back

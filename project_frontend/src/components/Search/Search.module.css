@@ -74,6 +74,8 @@
   font-size: 23px;
   line-height: 23px;
   font-weight: bolder;
+}
+.Search .Lables .item_one:hover {
   cursor: pointer;
 }
 .Search div .link {
@@ -106,12 +108,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(192, 192, 192, 0.6);
   background-color: white;
   border: none;
   color: black;
   font-weight: 600;
   border-radius: 20px;
   height: 40px;
+}
+.Search .linkBox .link .desc {
+  position: absolute;
+  top: -21%;
+  width: 40%;
+  height: 60px;
+  right: -7%;
+  background: #b2bfee;
+  display: none;
+  padding: 1%;
+  border-radius: 10px;
+  z-index: 999;
+}
+.Search .linkBox .link:hover .desc {
+  display: block;
 }
 @media (max-width: 900px) {
   .Search .Stone1 {
@@ -129,4 +147,4 @@
     display: none;
   }
 }
-/*# sourceMappingURL=./Search.module.css.map */
+/*# sourceMappingURL=Search.module.css.map */

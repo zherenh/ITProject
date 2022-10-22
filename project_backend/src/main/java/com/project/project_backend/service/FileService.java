@@ -14,7 +14,7 @@ public interface FileService {
     List<String> getLinkByLike(@Param("linkName") String linkName);
 
     //根据label_name搜索link
-    List<String> getLinkByLabelName(@Param("labelName") String labelName);
+    List<File> getLinkByLabelName(@Param("labelName") String labelName);
 
     //根据id删除file
     int deleteFileById(@Param("id") Integer id);

@@ -75,7 +75,77 @@
     justify-content: center;
     align-items: center;
 }
+//.mybox .ipt_labels .label{
+.mybox .ipt_labels >input{
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100px;
+    margin:0 1%;
+    border: 1px solid;
+    text-align: center;
+    padding: 1.1%;
+}
+.mybox .ipt_labels .addLabel{
+  position: absolute;
+    right: 4.1%;
+    font-size: 39px;
+}
+.mybox .ipt_labels .cancel{
+    position: absolute;
+    right: 17.1%;
+    font-size: 28px;
+    color: red;
+}
+.mybox .ipt_labels .confirm{
+    position: absolute;
+    right: 11.1%;
+    font-size: 28px;
+    color: green;
+}
 
+    .mybox .ipt_labels{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        //overflow: hidden;
+    position: relative;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #e9e9e9;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mybox .ipt_labels   .labelByLikeBox{
+
+    width: 100%;
+    background: lightblue;
+    position: absolute;
+    top: 102%;
+
+}
+.mybox .ipt_labels   .labelByLike{
+    background-color: transparent;
+    color: #fff;
+    display: block;
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100px;
+    margin: 0 1%;
+    border: 1px solid;
+    text-align: center;
+    padding: 1.1%;
+    margin: 2.1%;
+}
+.mybox .ipt_labels   .labelByLike:hover{
+    cursor: pointer;
+}
 .mybox .ipt_box input {
     padding-left: 5%;
     width: 95%;

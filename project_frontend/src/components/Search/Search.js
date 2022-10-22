@@ -10,7 +10,8 @@ export default class Search extends Component {
 		this.state = {
 			labelList: [],
 			keyword:'',
-			showElem:"none"
+			showElem:"none",
+			files:[]
 		};
 	}
 	componentDidMount() {
@@ -19,13 +20,14 @@ export default class Search extends Component {
 	}
 	getLinks = (labelName) => {
 		axios.get('http://81.68.222.89:8080/file/searchLinkByLabels',{
+		// axios.get('http://127.0.0.1:8080/file/searchLinkByLabels',{
 		params:{
 				labelName:labelName
 			}
 		}).then(
 			res => {
-				this.setState({links:res.data});
-				console.log('Succeed', this.state.links);
+				this.setState({files:res.data})
+				console.log(this.state.files)
 			},
 			error => {
 				console.log('Failed', error);
@@ -36,6 +38,7 @@ export default class Search extends Component {
 		console.log(this.state.keyword=='')
 		console.log(this.state.keyword)
 		axios.get('http://81.68.222.89:8080/research',{
+		// axios.get('http://127.0.0.1:8080/research',{
 			params:{
 				keywords:keywords
 			}
@@ -74,10 +77,14 @@ export default class Search extends Component {
 				<div className={classes.Lables}>
 					{this.state.labelList&&this.state.labelList.map((item,index) => <div key={index} id={item} onClick={this.showLinksByLabel} className={classes.item_one} >{item}</div>)}
 				</div>
+
 				<div className={classes.linkBox} style={{display:this.state.showElem}} >
-					{this.state.links&&this.state.links.map((item,index) => <div key={index}  className={classes.item_one} >
-                        <a className={classes.link} href={item}>{item}</a>
-                    </div>)}
+					{this.state.files&&this.state.files.map((item,index) => <div key={index}  className={classes.item_one} >
+						<a  style={{position:"relative"}} className={classes.link} href={item.link}>{item.link}
+							<span className={classes.desc} >{item.desc}</span>
+						</a>
+
+					</div>)}
 				</div>
 			</div>
 		)

@@ -63,16 +63,18 @@ class ProjectBackendApplicationTests {
 //        fileMapper.updateFile(fileMap);
 //        List<String> linkByLabelName = fileMapper.getLinkByLabelName("%%");
 //        System.out.println(linkByLabelName);
-        ArrayList<String> list1 = new ArrayList<>();
-        list1.add("fds1");
-        list1.add("fds1");
-        list1.add("fds2");
-        list1.add("fds3");
-        list1.add("fds4");
-        LinkedHashSet<String> hashSet = new LinkedHashSet<>(list1);
-        ArrayList<String> list2 = new ArrayList<>(hashSet);
-        System.out.println(list2);
-        }
+//        ArrayList<String> list1 = new ArrayList<>();
+//        list1.add("fds1");
+//        list1.add("fds1");
+//        list1.add("fds2");
+//        list1.add("fds3");
+//        list1.add("fds4");
+//        LinkedHashSet<String> hashSet = new LinkedHashSet<>(list1);
+//        ArrayList<String> list2 = new ArrayList<>(hashSet);
+//        System.out.println(list2);
+        List<Map<String, Object>> d = mainController.researchLinkOrLabelByLike("d");
+
+    }
 
 
 }
