@@ -76,10 +76,15 @@ We use Tencent cloud server as our project deployment server.
 http://81.68.222.89
 
 If want to use own server:
+
 -Downloap the code
+
 -Go to frontend file, npm build, update everything in the 'build' folder up your server
+
 -Go to backend, package all of the code as a jar file, and update the file to your server
+
 -Connect your own database
+
 -Finish
 
 Database detail 
