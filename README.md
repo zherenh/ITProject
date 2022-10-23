@@ -87,10 +87,10 @@ If want to use own server:
 
 -Finish
 
-Database detail 
-Database address: 81.68.222.89
-Port:3306
-Password:12345678
+Database detail:
+address: 81.68.222.89
+port:3306
+password:12345678
 
 
 ## Testing
